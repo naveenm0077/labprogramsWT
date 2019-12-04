@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1 style="text-align:center;color:red">Simple calculator</h1>
+    <table border="1" align="center">
+      <tr>
+        <th>Enter the 1st number</th>
+        <td><input type="number" id="num1" /></td>
+      </tr>
+      <tr>
+        <th>Enter the 2nd number</th>
+        <td><input type="number" id="num2" /></td>
+      </tr>
+      <tr>
+        <th colspan="2">
+          <input type="button" value="+" onclick="performop(this.value)" />
+          <input type="button" value="-" onclick="performop(this.value)" />
+          <input type="button" value="*" onclick="performop(this.value)" />
+          <input type="button" value="/" onclick="performop(this.value)" />
+        </th>
+      </tr>
+      <tr>
+        <th>Result</th>
+        <td><input type="number" name="res" id="res" readonly /></td>
+      </tr>
+    </table>
+
+    <script>
+      function performop(op) {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+
+        var result = 0;
+        if (op == "+") result = n1 + n2;
+        else if (op == "-") result = n1 - n2;
+        else if (op == "*") result = n1 * n2;
+        else result = n1 / n2;
+        document.getElementById("res").value = result;
+      }
+    </script>
+    <!-- <style>
+      [type="number"]::-webkit-inner-spin-button,
+      [type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+      }
+    </style> -->
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/css" href="lab5.css" ?>
+<students>
+    <student>
+        <usn>1VI16IS068</usn>
+        <name>Naveen</name>
+        <college>VEMANAIT</college>
+        <branch>ISE</branch>
+        <year>2016</year>
+        <email>naveenm0077@gmail.com</email>
+    </student>
+    <student>
+        <usn>1VI16IS101</usn>
+        <name>Shashank</name>
+        <college>VEMANAIT</college>
+        <branch>ISE</branch>
+        <year>2016</year>
+        <email>Shashank@gmail.com</email>
+    </student>
+    <student>
+        <usn>1VI16IS080</usn>
+        <name>Prajwal</name>
+        <college>VEMANAIT</college>
+        <branch>ISE</branch>
+        <year>2016</year>
+        <email>Prajwal@gmail.com</email>
+    </student>
+</students>

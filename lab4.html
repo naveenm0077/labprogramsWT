@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reverse and Vowel</title>
+    <style>
+      body {
+        background-color: dodgerblue;
+        text-align: center;
+        /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+      }
+      /* #b1 {
+        border-color: blue;
+        display: inline-block;
+        background-color: chartreuse;
+        margin-top: 20%;
+      }
+      #b2 {
+        border-color: crimson;
+        display: inline-block;
+        background-color: slateblue;
+      } */
+    </style>
+  </head>
+  <body>
+    <input type="button" value="Reverse a number" onclick="num();" /><br />
+    <input type="button" value="Identify leftmost vowel" onclick="vow()" />
+  </body>
+  <script>
+    function num() {
+      var n = parseInt(prompt("Enter a number:"));
+      var rev = 0,
+        d = 0;
+      while (n > 0) {
+        d = parseInt(n % 10);
+        rev = parseInt(rev * 10 + d);
+        n = parseInt(n / 10);
+      }
+      alert("reverse is: " + rev);
+    }
+    function vow() {
+      var s = prompt("Enter a string:");
+      for (var i = 0; i < s.length; i++) {
+        if (
+          s.charAt(i).toLowerCase() == "a" ||
+          s.charAt(i).toLowerCase() == "e" ||
+          s.charAt(i).toLowerCase() == "i" ||
+          s.charAt(i).toLowerCase() == "o" ||
+          s.charAt(i).toLowerCase() == "u"
+        ) {
+          alert("first vowel is " + s.charAt(i) + " at index " + i);
+          break;
+        }
+      }
+    }
+  </script>
+</html>
