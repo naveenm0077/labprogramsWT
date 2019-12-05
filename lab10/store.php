@@ -5,7 +5,7 @@ mysqli_select_db($db,"students_detail") or error(mysql_error());
 $id=$_POST["id"];
 $name=$_POST["Name"];
 $age=$_POST["Age"];
-$mob=$_POST["Mob"];
+$mob=(int)$_POST["Mob"];
 if ($id>0)
 {
     $q=mysqli_query($db,"insert into student values('$id','$name','$age','$mob')");
@@ -14,7 +14,7 @@ if ($id>0)
         echo
             "<script>
             alert(\"Insert Successful\");
-            window.location.href=\"retrieve.php\";
+            window.location.href=\"retrive.php\";
             </script>";
     }
     else {

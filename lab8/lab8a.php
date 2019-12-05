@@ -1,22 +1,22 @@
 <html>
     <head>
-        <title><?php echo "CALCULATOR_PHP";?></title>
+        <title>CALCULATOR_PHP</title>
     </head>
     <body>
         <center>
-            <form method="GET" action="compute.php">
+            <form method="GET" action="lab8a.php">
                 <fieldset>
                     <label>Number 1: </label>
-                    <input type="number" name="num1" id="num1"><br><br>
+                    <input type="number" name="num1"><br><br>
                     <label>Number 2: </label>
-                    <input type="number" name="num2" id="num2"><br><br>
+                    <input type="number" name="num2"><br><br>
                     <select name="op">
                         <option value="+">Addition</option>
                         <option value="-">Subtraction</option>
                         <option value="*">Multiplication</option>
                         <option value="/">Division</option>
                     </select><br><br>
-                    <input type="submit" value="ANS" name="sub"><br><br>
+                    <input type="submit" value="Result"><br><br>
                     <?php
                         $res=0;
                         $a=$_GET["num1"];
